@@ -9,8 +9,20 @@ void task5();
 
 int main()
 {
-
-
+setlocale(LC_ALL, "Ru");
+while (c != 0) {
+		cout << "Введите номер задания из списка домашнего задания или введите 0 для выхода из программы: ";
+		cin >> c;
+		switch (c) {
+		case(0): cout << "До свидания!" << endl; break;
+		case(1): cout << endl; task1(); c = -1; cout << endl; break;
+		case(2): cout << endl; task2(); c = -1; cout << endl; break;
+		case(3): cout << endl; task3(); c = -1; cout << endl; break;
+		case(4): cout << endl; task4(); c = -1; cout << endl; break;
+		case(5): cout << endl; task5(); c = -1; cout << endl; break;
+		default: cout << "А нам такого не задавали =( " << endl;
+		} 
+	}
 };
 
 // the task one
